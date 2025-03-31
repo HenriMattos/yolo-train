@@ -1,4 +1,4 @@
-# Detecção de Objetos com YOLOv8
+# Detecção de Objetos
 
 ## Visão Geral
 Este projeto utiliza o modelo YOLOv8, desenvolvido pela Ultralytics, para treinar um modelo personalizado de detecção de objetos com base em um dataset de 166 imagens anotadas, contendo as classes "carro" (classe 0) e "bike" (classe 1). O objetivo é treinar o modelo para detectar esses objetos em imagens e realizar análise em tempo real em vídeos.
@@ -59,7 +59,7 @@ pip install torch torchvision
 pip install ultralytics
 ```
 ```bash
-pip install opencv-python pillow
+pip install opencv-python pillow pandas matplotlib
 ```
 
 ### Verificação
