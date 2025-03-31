@@ -1,0 +1,5 @@
+train: /home/henri/programas-python/train-yolo/dataset/train/images
+val: /home/henri/programas-python/train-yolo/dataset/val/images
+names:
+  0: car
+  1: bike
