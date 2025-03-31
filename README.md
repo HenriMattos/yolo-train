@@ -51,15 +51,15 @@ Este projeto utiliza o modelo YOLOv8, desenvolvido pela Ultralytics, para treina
 ### Instalação das Dependências
 Instale o Python 3.8 ou superior.
 
-Instale o PyTorch:
+Instale:
 ```bash
 pip install torch torchvision
 ```
-Escolha a versão adequada ao seu hardware (CPU ou GPU) em PyTorch.
-
-Instale ou atualize o pacote Ultralytics:
 ```bash
-pip install -U ultralytics
+pip install ultralytics
+```
+```bash
+pip install opencv-python pillow
 ```
 
 ### Verificação
@@ -74,7 +74,7 @@ Saída esperada: algo como `2.6.0+cu124 8.3.99`.
 ### Estrutura do Dataset
 O dataset contém 166 imagens com anotações no formato YOLO (.txt com linhas no formato `classe x_centro y_centro largura altura`). As classes são:
 
-- `0`: "carro"
+- `0`: "car"
 - `1`: "bike"
 
 ### Divisão do Dataset
@@ -92,7 +92,7 @@ python train.py
 
 ### Execução
 ```bash
-python detect.py --video /caminho/para/seu/video.mp4
+python detect.py
 ```
 
 ## Considerações Adicionais
